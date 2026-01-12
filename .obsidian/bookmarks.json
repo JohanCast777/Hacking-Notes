@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1764737015697,
+      "items": [
+        {
+          "type": "url",
+          "ctime": 1764737003650,
+          "url": "https://academy.hackthebox.com/dashboard",
+          "title": "Dashboard"
+        },
+        {
+          "type": "url",
+          "ctime": 1764737003650,
+          "url": "https://www.perplexity.ai/search/can-i-know-what-is-the-main-di-Sb04wad.SP6uUyKz0o6lMA?login-source=requestAccessLoginGate&login-new=false",
+          "title": "can i know what is the main difference between this 2 commands= ip route get..."
+        },
+        {
+          "type": "url",
+          "ctime": 1764737003650,
+          "url": "https://claude.ai/login?returnTo=%2F%3F",
+          "title": "Claude"
+        },
+        {
+          "type": "file",
+          "ctime": 1764737003650,
+          "path": "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md"
+        }
+      ],
+      "title": "STUDYING"
+    }
+  ]
+}

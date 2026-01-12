@@ -1,0 +1,6 @@
+
+**OS BOOTING**
+![[Pasted image 20250914202940.png]]
+
+**MAIN CONFIGURATION AND FIRST STEPS**
+
