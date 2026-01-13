@@ -33,28 +33,30 @@ git add .
 git commit -m "Actualización de notas"
 ```
 ```
-git push origin master
+git push origin main
 ```
+==**ghp_YZHw4lBCn4qmIIbBQQL410Ay4btIWk27jfI**==U
 
 Verify commits created before
  ```
  git log  | git log --oneline
- ```
+ ``` 
 
 Return to a previous  commit
 ```
 git reset --hard 7b8e120
 ```
 
-
+Remove previous commits
+```
+git reset --soft HEAD~2
+```
 ## PULL REPOSITORY
 
 This after set the user and the long link with the repository
 ```
 git pull origin main
 ```
-
-
 
 
 
