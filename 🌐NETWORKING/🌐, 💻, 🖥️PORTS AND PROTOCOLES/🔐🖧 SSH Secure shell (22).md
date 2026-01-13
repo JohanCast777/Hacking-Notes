@@ -115,3 +115,29 @@ Connect to the server (Here first ask for the key pass, and then for the server 
 ssh -i ~/.ssh/test1 lubuntu@192.168.1.7
 ```
 
+
+# METHOD TO MAKE IT DON'T ADK THE KEY
+
+Put the password
+```
+ssh-add  ~/.ssh/test1
+```
+
+Now once we connect to the device, that won't ask anything
+```
+ssh lubuntu@192.168.1.7
+```
+
+Config the file to add some additional option to it
+```
+nano ~/.ssh/config
+```
+
+Set it up like this (now to connect we only have to use the hp_name )
+```
+Host hp_old
+    HostName 192.168.1.100
+    User lubuntu
+    Port 22
+```
+

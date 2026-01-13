@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "61127137e19e80b5",
+        "id": "f888f029123f89cd",
         "type": "tabs",
         "children": [
           {
-            "id": "40cd210a7a92624b",
+            "id": "cc07b7e476809ace",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔐🖧 SSH Secure shell (22).md",
+                "file": "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🔐🖧 SSH Secure shell (22)"
+              "title": "📦🗂️GIT COMMANDS"
             }
           }
         ]
@@ -169,15 +169,20 @@
       "bases:Create new base": false
     }
   },
-  "active": "40cd210a7a92624b",
+  "active": "cc07b7e476809ace",
   "lastOpenFiles": [
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🕸️⇆🗂️NFC Network File System(2049).md",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔐🖧 SSH Secure shell (22).md",
-    "🐍PYTHON HACKING/test.md",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥🌐HTTP-HTTPS WEB SERVER (80-443).md",
+    "🗎 RESOURCES/Pasted image 20260112185953.png",
+    "Pasted image 20260112185903.png",
+    "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
     "♟️COMMON COMANDS/CM APPS AND COMMANDS IN LINUX.md",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔐🖧 SSH Secure shell (22).md",
+    "🗃️REPOSITORIES AND BACKUPS",
+    "Pasted image 20260112171223.png",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🕸️⇆🗂️NFC Network File System(2049).md",
+    "🐍PYTHON HACKING/test.md",
     "🐧LINUX/🔐🛡️PERMISSIONS.md",
     "🌐NETWORKING/👁️NMAP/🔌💻PORTS AND EXTRA INFO SCANNING.md",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥🌐HTTP-HTTPS WEB SERVER (80-443).md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/SSH.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/💬🌈🧱SMB Server message block.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/📂🗃️📤FTP  File transfer protocol.md",
@@ -196,17 +201,12 @@
     "🗎 RESOURCES/Pasted image 20251206143644.png",
     "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
     "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
-    "🌐NETWORKING/🌐📅BASICS/🔢🏷️🔌VLANS.md",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/📂🗃️📤FTP explotation.md",
     "🗎 RESOURCES/Pasted image 20260108133025.png",
     "🗎 RESOURCES/Pasted image 20260102184322.png",
     "🗎 RESOURCES/Pasted image 20260102132003.png",
     "🗎 RESOURCES/Pasted image 20251229235753.png",
     "🗎 RESOURCES/Pasted image 20251228230546.png",
     "🗎 RESOURCES/Pasted image 20251228185543.png",
-    "🗎 RESOURCES/Pasted image 20251228185145.png",
-    "🗎 RESOURCES/Pasted image 20251228122413.png",
-    "Pasted image 20251228122404.png",
     "🪟WINDOWS",
     "🐧LINUX"
   ]
