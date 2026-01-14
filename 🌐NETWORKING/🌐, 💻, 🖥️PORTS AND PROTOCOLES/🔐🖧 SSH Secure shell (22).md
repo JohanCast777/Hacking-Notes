@@ -95,7 +95,7 @@ Check the keys created
 ll ~/.ssh
 ```
 
-Create a new key
+#Create_new_key
 ```
 ssh-keygen -t ed25519 -C "Johan-test"
 ```

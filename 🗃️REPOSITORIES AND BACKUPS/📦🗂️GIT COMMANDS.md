@@ -30,7 +30,7 @@ git remote remove origin
 git add .
 ```
 ```
-git commit -m "Actualización de notas"
+git commit -m ""
 ```
 ```
 git push origin main
@@ -39,7 +39,7 @@ git push origin main
 
 Verify commits created before
  ```
- git log  | git log --oneline
+git log  | git log --oneline
  ``` 
 
 Return to a previous  commit

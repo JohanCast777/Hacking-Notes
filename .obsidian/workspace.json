@@ -4,39 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "edff8626b860df97",
+        "id": "46bed2547758468a",
         "type": "tabs",
         "children": [
           {
-            "id": "8ebbcab65d35d705",
+            "id": "92afbe37ea8e03b5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
+                "file": "🐧LINUX/⏳⏱️TASK SCHEDULING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🔗NETWORKING CONCEPTS"
+              "title": "⏳⏱️TASK SCHEDULING"
             }
           },
           {
-            "id": "5fdaba70b1a11e23",
+            "id": "521daf9e061a1c8b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🐧LINUX/🔄📥BACKUP AND RESTORE.md",
+                "file": "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🕸️⇆🗂️NFC Network File System(2049).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "🔄📥BACKUP AND RESTORE"
+              "title": "🕸️⇆🗂️NFC Network File System(2049)"
             }
           },
           {
-            "id": "6adf9db89cb2008e",
+            "id": "8cf070b3448e31bf",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "proxy",
+                "query": "git",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -103,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -198,23 +199,32 @@
       "bases:Create new base": false
     }
   },
-  "active": "6adf9db89cb2008e",
+  "active": "8cf070b3448e31bf",
   "lastOpenFiles": [
+    "🐧LINUX/⏳⏱️TASK SCHEDULING.md",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔐🖧 SSH Secure shell (22).md",
     "🐧LINUX/🔄📥BACKUP AND RESTORE.md",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🕸️⇆🗂️NFC Network File System(2049).md",
+    "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
+    "🐧LINUX/🐧🪟MAIN.md",
+    "🐧LINUX/👤 MANAGE USERS.md",
+    "🐧LINUX/🔍🕵️FIND.md",
+    "🐧LINUX/🔐🛡️PERMISSIONS.md",
+    "🐧LINUX/⬇️📦 APPLICATIONS.md",
+    "🐧LINUX/📊⚙️ FILTER AND OPEN CONTENTS.md",
+    "🐧LINUX/🛠️⚙️SERVICES.md",
+    "Create a new key.md",
+    "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
+    "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥🌐HTTP-HTTPS WEB SERVER (80-443).md",
     "index.html",
-    "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔌 PORTS AND PROTOCOLS.md",
-    "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
     "🗎 RESOURCES/Pasted image 20260112185953.png",
     "Pasted image 20260112185903.png",
     "♟️COMMON COMANDS/CM APPS AND COMMANDS IN LINUX.md",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔐🖧 SSH Secure shell (22).md",
     "🗃️REPOSITORIES AND BACKUPS",
     "Pasted image 20260112171223.png",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🕸️⇆🗂️NFC Network File System(2049).md",
     "🐍PYTHON HACKING/test.md",
-    "🐧LINUX/🔐🛡️PERMISSIONS.md",
     "🌐NETWORKING/👁️NMAP/🔌💻PORTS AND EXTRA INFO SCANNING.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/SSH.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/💬🌈🧱SMB Server message block.md",
@@ -222,15 +232,6 @@
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔌🔗WAYS TO CONNECT TO.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥️ 👻 🔌 TELNET explotation.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🛢️🟥⛁REDIS explotation.md",
-    "🐧LINUX/🛠️⚙️SERVICES.md",
-    "🕵🏻‍♀️ANONYMITY/💽 TAILS.md",
-    "🕵🏻‍♀️ANONYMITY/📁 FILE MANAGEMENT AND FILE SHARING.md",
-    "🕵🏻‍♀️ANONYMITY/📦QUBES AND WHONIX OS.md",
-    "🕵🏻‍♀️ANONYMITY/🔍 SEARCH ENGINES.md",
-    "🕵🏻‍♀️ANONYMITY/🔗LINKS AND WEB SITES.md",
-    "🧪VIRTUAL LABS/🔓🎯🖥️ TRYHACKME.md",
-    "🪟WINDOWS/🔌💽CONFIGURE FLASH DRIVE.md",
-    "🐧LINUX/🐧🪟MAIN.md",
     "🗎 RESOURCES/Pasted image 20251206143644.png",
     "🗎 RESOURCES/Pasted image 20260108133025.png",
     "🗎 RESOURCES/Pasted image 20260102184322.png",
