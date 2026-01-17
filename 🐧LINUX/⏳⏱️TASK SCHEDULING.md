@@ -127,6 +127,34 @@ Name=Autostart Hacking Apps
 EOF
 ```
 
+## #Crontab
+
+Main file
+```
+cat /etc/crontab
+```
+
+Check crontabs set
+```
+crontab -l
+```
+
+Choose the user we will use 
+```
+crontab -u
+```
+
+Create a new crontab
+```
+crontab -e
+```
+
+This is what that should contains
+```
+1 * * * * /bin/echo "This is a test" > /home/ubuntu/Documents/work/test
+```
+
+
 #### What task scheduling is for
 - Automatic backups, syncs, database dumps, log rotation.- ​
 - Cleaning temp files, updating caches, trimming SSDs, system maintenance tasks.

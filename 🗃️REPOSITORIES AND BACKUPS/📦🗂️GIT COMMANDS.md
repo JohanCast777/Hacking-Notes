@@ -15,6 +15,8 @@ git init
 ```
 git remote add origin https://github.com/TuUsuario/TuRepositorio.git
 ```
+https://github.com/JohanCast777/Hacking-Notes.git
+
 Check what repository we are in
 ```
 git remote -v

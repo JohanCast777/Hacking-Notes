@@ -71,3 +71,65 @@
 | `lsusb`     | Lists USB devices                                                                                                                  |
 | `lsof`      | Lists opened files.                                                                                                                |
 | `lspci`     | Lists PCI devices.                                                                                                                 |
+
+CRETE FILES, DIRECTORIES AND SYMBOLIC LINKS 
+
+File
+```
+nano {path}
+```
+
+```
+touch test.txt
+```
+
+Directory
+
+```
+mkdir {name}
+```
+
+Symbolic link
+```
+ln -s /path/to/original ~/shortcut-name
+```
+
+## UPDATE THE INTERFACE NAME
+
+Check the current interface name
+```
+ip a
+```
+
+Check the mac address in this file
+```
+cat /sys/class/net/{interface }/address
+```
+
+Create a udev rule
+```
+sudo nano /etc/udev/rules.d/70-persistent-net.rules
+```
+
+Paste this info replacing the macaddress
+```
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="{mac}", NAME="lan1"
+```
+
+Apply the update 
+```
+sudo udevadm control --reload-rules
+```
+
+```
+sudo udevadm trigger
+```
+
+Reboot the pc to confirm changes 
+```
+sudo reboot
+```
+
+```
+ip a
+```
