@@ -44,6 +44,11 @@ Verify commits created before
 git log  | git log --oneline
  ``` 
 
+Replace the commit name
+```
+git commit --amend -m "Your new perfect message"
+```
+
 Return to a previous  commit
 ```
 git reset --hard 7b8e120
