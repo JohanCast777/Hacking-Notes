@@ -15,5 +15,66 @@
 ![[Pasted image 20260117152428.png|1000]]
 
 
-## Management
+## Disk Management
 
+Shows the `📦` devices or (partitions), hardware view.
+
+```
+lsblk
+```
+
+```
+sudo fdisk -l
+```
+
+Check the file (Permissions)
+```
+ll /dev/nvme0n1
+```
+
+## Mounting
+
+Shows all the currectly mounted files
+```
+mount
+```
+
+Mount a disk
+```
+sudo mount /dev/sdb1 ~/USBtest/
+```
+
+Umount a disk
+```
+sudo umount /dev/sdb1
+```
+
+Mount main file to set booting options
+```
+nano /etc/fstab
+```
+
+Create a new partition table
+```
+sudo fdisk /dev/sdb
+```
+
+This are the possible commands
+![[Pasted image 20260117224045.png]]
+
+
+
+To take off the USB
+
+```
+sudo umount -l /dev/sdb1
+```
+```
+sync
+```
+```
+sudo eject /dev/sdb
+```
+```
+lsblk | grep sdb
+```
