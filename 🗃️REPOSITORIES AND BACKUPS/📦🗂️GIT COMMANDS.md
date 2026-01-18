@@ -66,6 +66,32 @@ git pull origin main
 ```
 
 
+## SSH OPTION
 
+==Pull with ssh==
 
+Create a ssh key
+```
+ssh-keygen -t ed25519 -C "castanojohan01@gmail.com"
+```
 
+Check the key
+```
+cat ~/.ssh/id_ed25519.pub
+```
+
+Add the key in this section of Github (The key is like this= SHA256:VSebidy2CM3sX7YnvQWBSc5UCeBy9Vk8hgAItQdmI)
+![[Pasted image 20260118140556.png]]
+
+Pull the repository
+```
+git pull origin main
+```
+
+Save key to automate the process
+```
+eval $(ssh-agent)
+```
+```
+ssh-add ~/.ssh/id_ed25519
+```

@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "📦🗂️GIT COMMANDS"
             }
+          },
+          {
+            "id": "0da048bfe03c33a8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📦🗂️GIT COMMANDS"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -89,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,8 +198,9 @@
       "bases:Create new base": false
     }
   },
-  "active": "422963614e44bc70",
+  "active": "0da048bfe03c33a8",
   "lastOpenFiles": [
+    "🗎 RESOURCES/Pasted image 20260118140556.png",
     "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
     "🗎 RESOURCES/Pasted image 20260117224045.png",
     "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
