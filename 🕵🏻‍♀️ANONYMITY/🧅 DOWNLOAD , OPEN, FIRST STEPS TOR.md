@@ -1,7 +1,7 @@
 
 **LINUX DOWNLOAD AND OPEN**
 
-[[ᝰ✍🏻TOR VERIFYCATION SIGNATURE STEPS]]
+[[ᝰ✍🏻VERIFYCATION SIGNATURE STEPS]]
 
 unxz tor-browser-linux-x86_64-14.5.6.tar.xz
 

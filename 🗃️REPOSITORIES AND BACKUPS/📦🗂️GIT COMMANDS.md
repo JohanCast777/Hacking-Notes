@@ -44,6 +44,16 @@ Verify commits created before
 git log  | git log --oneline
  ``` 
 
+Check the branch we are in
+```
+git branch
+```
+
+Rename the branch
+```
+git branch -M main
+```
+
 Replace the commit name
 ```
 git commit --amend -m "Your new perfect message"
