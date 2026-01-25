@@ -2,10 +2,10 @@
 ## Set user and email
 
 ```
-git config --global user.name "TuNombre"
+git config --global user.name "JohanCast777"
 ```
 ```
-git config --global user.email "tuemail@example.com"
+git config --global user.email "castanojohan01@gmail.com"
 ```
 
 ## Sync folder with repository
@@ -37,7 +37,7 @@ git commit -m ""
 ```
 git push origin main
 ```
-==**ghp_YZHw4lBCn4qmIIbBQQL410Ay4btIWk27jfI**==U
+==**ghp_YZHw4lBCn4qmIIbBQQL410Ay4btIWk27jfI**==
 
 Verify commits created before
  ```
@@ -105,3 +105,15 @@ eval $(ssh-agent)
 ```
 ssh-add ~/.ssh/id_ed25519
 ```
+
+## Quick Stash and Pull in case issue with pull
+
+
+```
+git stash push -m "device-specific changes"
+```
+
+```
+git pull origin main
+```
+U

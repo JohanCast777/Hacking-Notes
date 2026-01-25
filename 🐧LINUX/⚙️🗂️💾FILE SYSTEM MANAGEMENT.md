@@ -62,6 +62,12 @@ sudo fdisk /dev/sdb
 This are the possible commands
 ![[Pasted image 20260117224045.png]]
 
+|Scheme|Year Created|Company|Primary Use|
+|---|---|---|---|
+|MBR|1983|IBM|PC DOS/Windows systems|
+|Sun|~1983-1985|Sun Microsystems|SunOS/Solaris SPARC|
+|SGI|1988|Silicon Graphics|IRIX on MIPS|
+|GPT|~1997-1999|Intel|UEFI systems, modern OSes|
 
 
 To take off the USB
@@ -78,3 +84,24 @@ sudo eject /dev/sdb
 ```
 lsblk | grep sdb
 ```
+
+## Format a the disk
+
+Format the disk an set an specific file system
+```
+sudo mkfs.exfat /dev/sdb1
+```
+
+With this command and clicking tap we can check some of the availables file systems 
+![[Pasted image 20260124203038.png]]
+
+Show mounted file systems 
+```
+df -h
+```
+
+
+==COMPLETE THIS SETION AND USE THE OTHER TESTING PC PLS==
+
+
+https://www.youtube.com/watch?v=2Z6ouBYfZr8
