@@ -17,7 +17,7 @@
 
 ## Disk Management
 
-Shows the `📦` devices or (partitions), hardware view.
+List the `📦` devices or (partitions), hardware view.
 
 ```
 lsblk
@@ -27,14 +27,14 @@ lsblk
 sudo fdisk -l
 ```
 
-Check the file (Permissions)
+ This is the default way to see where the disks are located
 ```
 ll /dev/nvme0n1
 ```
 
 ## Mounting
 
-Shows all the currectly mounted files
+Shows all the currently mounted files (Remember the previous command was for all the partitions, and this one only the ones that are mounted)
 ```
 mount
 ```

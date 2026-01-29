@@ -3,15 +3,15 @@
 
 ![[Pasted image 20251223174254.png]]
 
-|Character|Meaning|Description|
-|---|---|---|
-|`-`|Regular file|Normal file containing data, text, binaries, etc.|
-|`d`|Directory|Folder that can contain files and other directories.|
-|`l`|Symbolic link|Reference (shortcut) pointing to another file or directory.|
-|`b`|Block device|Hardware device accessed in blocks (e.g., disks).|
-|`c`|Character device|Device accessed as a stream of characters (e.g., terminals).|
-|`s`|Socket|Endpoint for inter-process/network communication.|
-|`p`|FIFO/Named pipe|Special file for one-way inter-process communication.|
+| Character | Meaning          | Description                                                  |
+| --------- | ---------------- | ------------------------------------------------------------ |
+| `-`       | Regular file     | Normal file containing data, text, binaries, etc.            |
+| `d`       | Directory        | Folder that can contain files and other directories.         |
+| `l`       | Symbolic link    | Reference (shortcut) pointing to another file or directory.  |
+| `b`       | Block device     | Hardware device accessed in blocks (e.g., disks).            |
+| `c`       | Character device | Device accessed as a stream of characters (e.g., terminals). |
+| `s`       | Socket           | Endpoint for inter-process/network communication.            |
+| `p`       | FIFO/Named pipe  | Special file for one-way inter-process communication.        |
 
 ==CHANGE THE OWNER==
 
