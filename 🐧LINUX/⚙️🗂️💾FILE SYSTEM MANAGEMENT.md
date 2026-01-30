@@ -101,7 +101,3 @@ df -h
 ```
 
 
-==COMPLETE THIS SETION AND USE THE OTHER TESTING PC PLS==
-
-
-https://www.youtube.com/watch?v=2Z6ouBYfZr8

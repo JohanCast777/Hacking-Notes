@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bcf58c3424df7d70",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "⚙️🗂️💾FILE SYSTEM MANAGEMENT"
-            }
-          },
-          {
             "id": "c7a2a8b009ec04f3",
             "type": "leaf",
             "pinned": true,
@@ -51,6 +35,34 @@
               },
               "icon": "lucide-file",
               "title": "📦🗂️GIT COMMANDS"
+            }
+          },
+          {
+            "id": "155f170cc8184a01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🐧LINUX/🔐🛡️PERMISSIONS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🔐🛡️PERMISSIONS"
+            }
+          },
+          {
+            "id": "34e26fd78d0bf026",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "⭐MAIN FACTORS"
             }
           }
         ]
@@ -85,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "commit",
+                "query": "ramso",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -106,12 +118,12 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "360c0f8b803e8acb",
@@ -202,12 +214,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "bcf58c3424df7d70",
+  "active": "c7a2a8b009ec04f3",
   "lastOpenFiles": [
+    "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
+    "👨🏻‍💻CYBERSECURITY BASICS/💥⚔️MAIN ATTACKS.md",
     "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
     "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
-    "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
     "🐧LINUX/🔐🛡️PERMISSIONS.md",
+    "🐧LINUX/👤 MANAGE USERS.md",
+    "🗎 RESOURCES/Pasted image 20260129201117.png",
+    "🐧LINUX/⬇️📦 APPLICATIONS.md",
+    "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
     "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
     "🐧LINUX/🔍🕵️FIND.md",
     "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥🌐HTTP-HTTPS WEB SERVER (80-443).md",
@@ -233,14 +250,9 @@
     "🗎 RESOURCES/Pasted image 20260119161810.png",
     "Pasted image 20260119161812.png",
     "🧊 VM AND OS FOR BOOTING",
-    "🗎 RESOURCES/Pasted image 20260118222029.png",
     "🕵🏻‍♀️ANONYMITY/ᝰ✍🏻VERIFYCATION SIGNATURE STEPS.md",
     "🧊 VIRTUAL MACHINES/ᝰ✍🏻OPS VERIFYCATION SIGNATURE STEPS.md",
     "🧊 VIRTUAL MACHINES/🕸️ CLASSES.md",
-    "🧊 VIRTUAL MACHINES/🔗LINKS AND WEB SITES.md",
-    "🧪VIRTUAL LABS/🔓🎯🖥️ TRYHACKME.md",
-    "🧪VIRTUAL LABS/🔗LINKS.md",
-    "🧪VIRTUAL LABS/🟩⬛️🔑 HACK THE BOX.md",
     "index.html",
     "🗃️REPOSITORIES AND BACKUPS",
     "🪟WINDOWS",
