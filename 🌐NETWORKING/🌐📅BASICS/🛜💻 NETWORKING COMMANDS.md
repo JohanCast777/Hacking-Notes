@@ -45,3 +45,33 @@ ping -c 1 -R 10.129.143.158
 | **virbr0**               | Virtual Bridge | L2 + L3       | Connects VMs to host or external network         | ❌ No                       | 192.168.122.1  | ✅ (via NAT)                              |
 
 
+## GN3
+
+Download steps (This command steps worked in the ubuntu image in docker)
+
+```
+apt update && apt upgrade -y
+apt install -y wget curl gnupg2 ca-certificates software-properties-common apt-transport-https
+apt install -y python3 python3-pip python3-venv python3-dev build-essential 
+apt install -y python3-pyqt5 python3-pyqt5.qtsvg python3-pyqt5.qtwebsockets 
+apt install -y qemu-system qemu-utils qemu-kvm libvirt-clients libvirt-daemon-system virtinst
+apt install -y dynamips vpcs wireshark-common tshark iproute2 net-tools telnet openssh-server
+apt install -y wireshark-common tshark
+apt install -y iproute2 net-tools telnet openssh-server
+pip3 install --upgrade pip setuptools wheel
+pip3 install pipx
+pipx ensurepath
+exec bash
+gns3server
+```
+
+Now in the host install the GNS3 for host
+
+sudo apt install -y python3-pip
+pip3 install --break-system-packages pipx
+exec bash
+sudo apt install -y python3-venv python3.12-venv
+pipx install gns3-gui
+sudo apt install -y python3-pyqt5 python3-pyqt5.qtwebsockets python3-pyqt5.qtsvg
+gns3
+gns3

@@ -206,6 +206,10 @@ Rootless Docker
 | `loginctl enable-linger $USER`                                               | Allows your user services (like rootless Docker) to stay running even when you log out.  |
 | `echo 'export DOCKER_HOST="unix:///run/user/1000/docker.sock"' >> ~/.bashrc` | Points the `docker` CLI to the rootless Docker daemon socket (UID 1000 example).         |
 | `docker info`                                                                | Shows detailed info; will say `rootless: true` when you’re talking to rootless Docker.   |
+Use the container terminal
+```
+docker attach "name container"
+```
 
 Start lazydocker
 ```
@@ -220,3 +224,6 @@ lazydocker
 
 LXC
 Podman
+Rootless Docker (Most secured, and anonym)
+Rootless Podman (Most secured, and anonym)
+
