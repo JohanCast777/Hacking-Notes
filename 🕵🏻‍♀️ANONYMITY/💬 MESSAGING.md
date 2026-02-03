@@ -19,7 +19,7 @@ wget https://github.com/oxen-io/session-desktop/releases/download/v1.14.3/sessio
 chmod +x session-desktop-linux-x86_64-1.14.3.AppImage
 ```
 ```
-sudo ./session-desktop-linux-x86_64-1.14.3.AppImage --no-sandbox
+./session-desktop-linux-x86_64-1.14.3.AppImage --no-sandbox
 ```
 
 
@@ -28,7 +28,10 @@ sudo ./session-desktop-linux-x86_64-1.14.3.AppImage --no-sandbox
 Install the app with this logo
 ![[Pasted image 20260203161543.png|200]]
 
-
+Another alternatve isin the oficial website
+```
+https://getsession.org
+```
 
 ## BRIAR
 *Tor-native, works offline via Bluetooth mesh, best for activists in restricted areas*
@@ -76,19 +79,35 @@ This can not be install in smartphone
 Install the app with this logo
 ![[Pasted image 20260203165344.png]]
 
+## Pidgin
+*This is the default encrypted message of tails *
+
+==Installation in the OS==
+
+```
+sudo apt install pidgin pidgin-data pidgin-otr
+```
+
+This can not be install in smartphone
+
+![[Pasted image 20260203182806.png]]
 
 | App          | Anonymity | Tor-Native | Phone Required | Decentralized | Offline |
 | ------------ | --------- | ---------- | -------------- | ------------- | ------- |
 | **Session**  | ⭐⭐⭐⭐⭐     | Built-in   | No             | ✅             | ✅       |
 | **Briar**    | ⭐⭐⭐⭐⭐     | Built-in   | No             | ✅             | ✅       |
 | **Ricochet** | ⭐⭐⭐⭐⭐     | Native     | No             | ✅             | Limited |
+| **Pidgin**   | ⭐⭐⭐⭐      | w/ Tor     | No             | ❌             | ✅       |
 | **Signal**   | ⭐⭐⭐       | Optional   | Yes            | ❌             | ❌       |
 | **SimpleX**  | ⭐⭐⭐⭐      | Optional   | No             | ✅             | ❌       |
+|              |           |            |                |               |         |
 
-| App              | Android | iOS   | Desktop               |
-| ---------------- | ------- | ----- | --------------------- |
-| **Briar**        | ✅ Yes   | ❌ No  | ✅ Yes                 |
-| **Signal**       | ✅ Yes   | ✅ Yes | ✅ Yes                 |
-| **Ricochet**     | ❌ No    | ❌ No  | ✅ Yes (desktop only)  |
-| **SimpleX Chat** | ✅ Yes   | ✅ Yes | ✅ Yes                 |
-| **Tails OS**     | ❌ No    | ❌ No  | ✅ Yes (live USB only) |
+
+| App              | Android | iOS   | Desktop                   |
+| ---------------- | ------- | ----- | ------------------------- |
+| **Briar**        | ✅ Yes   | ❌ No  | ✅ Yes                     |
+| **Signal**       | ✅ Yes   | ✅ Yes | ✅ Yes                     |
+| **Ricochet**     | ❌ No    | ❌ No  | ✅ Yes (desktop only)      |
+| **Pidgin**       | ❌ No    | ❌ No  | ✅ Yes (Linux/Windows/Mac) |
+| **SimpleX Chat** | ✅ Yes   | ✅ Yes | ✅ Yes                     |
+| **Tails OS**     | ❌ No    | ❌ No  | ✅ Yes (live USB only)     |
