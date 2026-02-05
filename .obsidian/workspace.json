@@ -1,58 +1,14 @@
 {
   "main": {
-    "id": "a5149459900121ba",
+    "id": "5285ea67280e66a1",
     "type": "split",
     "children": [
       {
-        "id": "f5702b6a68b054a6",
+        "id": "272c83af2e61f16b",
         "type": "tabs",
         "children": [
           {
-            "id": "c7a2a8b009ec04f3",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
-                "mode": "source",
-                "source": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "📦📦🚛CONTAINERIZATION"
-            }
-          },
-          {
-            "id": "155f170cc8184a01",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🐧LINUX/🔐🛡️PERMISSIONS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "🔐🛡️PERMISSIONS"
-            }
-          },
-          {
-            "id": "34e26fd78d0bf026",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "⭐MAIN FACTORS"
-            }
-          },
-          {
-            "id": "09082f00a6300d7f",
+            "id": "0c3d7a6b308946fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -64,79 +20,22 @@
               "icon": "lucide-file",
               "title": "🛜💻 NETWORKING COMMANDS"
             }
-          },
-          {
-            "id": "130ad7aa698dd13b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "📦🗂️GIT COMMANDS"
-            }
-          },
-          {
-            "id": "d24d4a7683d7a574",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💬 MESSAGING"
-            }
-          },
-          {
-            "id": "c64bd0208fa0c38e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "💬 MESSAGING"
-            }
-          },
-          {
-            "id": "521ea62d842e72fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🐧LINUX/⬇️📦 APPLICATIONS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "⬇️📦 APPLICATIONS"
-            }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "45f75d8134d2ff04",
+    "id": "49fdacf55a75869e",
     "type": "split",
     "children": [
       {
-        "id": "f1a8b41088dde29b",
+        "id": "7c25f8a0422c45c1",
         "type": "tabs",
         "children": [
           {
-            "id": "21beb59c6d719911",
+            "id": "9403d5ecb8556157",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -149,12 +48,12 @@
             }
           },
           {
-            "id": "1ae0950a6b4f4af3",
+            "id": "f8906ba112a1a696",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "flame",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -166,7 +65,7 @@
             }
           },
           {
-            "id": "27081d10cdf68d85",
+            "id": "e484280b627694df",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -182,20 +81,19 @@
     "width": 300
   },
   "right": {
-    "id": "360c0f8b803e8acb",
+    "id": "4741f8bb82f4f6e5",
     "type": "split",
     "children": [
       {
-        "id": "81add33ae70de01d",
+        "id": "7e8abc6e596f42a7",
         "type": "tabs",
         "children": [
           {
-            "id": "1472a1f8adc1132c",
+            "id": "a4798d0b1179ecd3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -205,25 +103,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 🔗NETWORKING CONCEPTS"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "b892d191f96969a9",
+            "id": "ce230bd7dcd58930",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 🔗NETWORKING CONCEPTS"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "bdccd4f5ee8701a6",
+            "id": "55fc695518022e3e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -238,18 +135,31 @@
             }
           },
           {
-            "id": "a237b138fb466650",
+            "id": "d662e63311c8618a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-ghost",
+              "title": "all-properties"
+            }
+          },
+          {
+            "id": "bbbc554ce4199fbb",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 🔗NETWORKING CONCEPTS"
+              "title": "Outline"
             }
           }
         ]
@@ -270,48 +180,52 @@
       "bases:Create new base": false
     }
   },
-  "active": "21beb59c6d719911",
+  "active": "0c3d7a6b308946fc",
   "lastOpenFiles": [
-    "🗎 RESOURCES/Pasted image 20260203182806.png",
-    "🐧LINUX/⬇️📦 APPLICATIONS.md",
-    "♟️COMMON COMANDS/CM APPS AND COMMANDS IN LINUX.md",
-    "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
-    "🗎 RESOURCES/Pasted image 20260203165344.png",
-    "🗎 RESOURCES/Pasted image 20260203165041.png",
-    "🗎 RESOURCES/Pasted image 20260203163505.png",
-    "🗎 RESOURCES/Pasted image 20260203162602.png",
-    "🗎 RESOURCES/Pasted image 20260203161543.png",
-    "🕵🏻‍♀️ANONYMITY/💽 TAILS.md",
-    "🕵🏻‍♀️ANONYMITY/🌉 BRIDGES.md",
-    "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
-    "🐧LINUX/🔐🛡️PERMISSIONS.md",
-    "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
+    "🗎 RESOURCES/Pasted image 20260204185858.png",
     "🌐NETWORKING/🌐📅BASICS/🛜💻 NETWORKING COMMANDS.md",
-    "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
-    "🕵🏻‍♀️ANONYMITY/🔍 SEARCH ENGINES.md",
-    "Pasted image 20260203155119.png",
-    "🗎 RESOURCES/Pasted image 20260203155140.png",
-    "🕵🏻‍♀️ANONYMITY/🕸️ CLASSES.md",
-    "🕵🏻‍♀️ANONYMITY/🔗LINKS AND WEB SITES.md",
-    "🕵🏻‍♀️ANONYMITY/📦QUBES AND WHONIX OS.md",
-    "🕵🏻‍♀️ANONYMITY/📧 ANONYMOUS CONTACT METHODS.md",
+    "Pasted image 20260204185749.png",
     "🌐NETWORKING/🌐📅BASICS/🔢🏷️🔌VLANS.md",
-    "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
-    "👨🏻‍💻CYBERSECURITY BASICS/💥⚔️MAIN ATTACKS.md",
-    "🐧LINUX/👤 MANAGE USERS.md",
-    "🗎 RESOURCES/Pasted image 20260129201117.png",
+    "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
     "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
-    "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
-    "🐧LINUX/🔍🕵️FIND.md",
-    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🖥🌐HTTP-HTTPS WEB SERVER (80-443).md",
-    "🐧LINUX/📊⚙️ FILTER AND OPEN CONTENTS.md",
+    "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
+    "🕵🏻‍♀️ANONYMITY/🌉 BRIDGES.md",
+    "🗎 RESOURCES/Pasted image 20260118140556.png",
+    "🗎 RESOURCES/Pasted image 20260117224045.png",
+    "🗎 RESOURCES/Pasted image 20260117152428.png",
+    "🗎 RESOURCES/Pasted image 20260117143911.png",
+    "🗎 RESOURCES/Pasted image 20260117143629.png",
+    "🗎 RESOURCES/Pasted image 20260117143235.png",
+    "🗎 RESOURCES/Pasted image 20260117005354.png",
+    "🗎 RESOURCES/Pasted image 20260117005154.png",
+    "🗎 RESOURCES/Network_Enumeration_With_Nmap_Module_Cheat_Sheet.pdf",
+    "🗎 RESOURCES",
+    "👨🏻‍💻CYBERSECURITY BASICS/💥⚔️MAIN ATTACKS.md",
+    "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
+    "👨🏻‍💻CYBERSECURITY BASICS",
+    "🐧LINUX/🔐🛡️PERMISSIONS.md",
     "🐧LINUX/🛠️⚙️SERVICES.md",
-    "🗎 RESOURCES/Pasted image 20260124203038.png",
-    "🗎 RESOURCES/Pasted image 20260121172147.png",
-    "🧊 VM AND OS FOR BOOTING",
-    "index.html",
-    "🗃️REPOSITORIES AND BACKUPS",
-    "🪟WINDOWS",
-    "🐧LINUX"
+    "🐧LINUX/🔄📥BACKUP AND RESTORE.md",
+    "🐧LINUX/🔍🕵️FIND.md",
+    "🐧LINUX/📊⚙️ FILTER AND OPEN CONTENTS.md",
+    "🐧LINUX/👤 MANAGE USERS.md",
+    "🐧LINUX/🐧🪟MAIN.md",
+    "🐧LINUX/⬇️📦 APPLICATIONS.md",
+    "🐧LINUX/⏻✅  WAKE ON LAN.md",
+    "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
+    "🐧LINUX/⏳⏱️TASK SCHEDULING.md",
+    "🐧LINUX",
+    "🐍PYTHON HACKING/test.md",
+    "🐍PYTHON HACKING",
+    "🎣SOCIAL ENGINEERING/test.md",
+    "🎣SOCIAL ENGINEERING",
+    "🌐NETWORKING/👁️NMAP/🚩BANNER.md",
+    "🌐NETWORKING/👁️NMAP/🔥🧱FIREWALL IDS-IPS EVASION.md",
+    "🌐NETWORKING/👁️NMAP/🔢ENUMERATION.md",
+    "🌐NETWORKING/👁️NMAP/🔍💻HOST SCANNING.md",
+    "🌐NETWORKING/👁️NMAP",
+    "🌐NETWORKING/🌐📅BASICS",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES",
+    "🌐NETWORKING"
   ]
 }
