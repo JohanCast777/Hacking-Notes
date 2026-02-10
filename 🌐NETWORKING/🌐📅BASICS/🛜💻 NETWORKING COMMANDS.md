@@ -51,7 +51,9 @@ ping -c 1 -R 10.129.143.158
 
 [Instalation link ](https://www.gns3.com/software/download)
 
-[Install Images](https://www.telectronika.com/descargas/cisco-imagenes-ios-para-gns3-dynamips-y-vm/)
+[Install Images routers](https://www.telectronika.com/descargas/cisco-imagenes-ios-para-gns3-dynamips-y-vm/)
+
+[Cisco images](https://community.cisco.com/t5/routing/images-for-gns3/td-p/3813389)
 
 
 ==FIRST CONFIGURATION==
@@ -69,5 +71,94 @@ Now follow this steps to insert the image and use the router(image)
 
 Edit > Preferences > Dynamips > Iso Router > New > Local computer > Browse it > Skip warning > Select slot 0 > 
 
+
+
+
 ==COMMANDS==
+
+
+### PCs
+
+Check the pc information
+```
+show ip
+```
+
+Set ip 
+```
+ip 192.168.1.10 255.255.255.0 192.168.1.1
+```
+
+Check the connectivity with devices
+```
+ping 192.168.1.20
+```
+
+Save all the conf
+```
+save
+```
+
+Show the arp 
+```
+show arp
+```
+
+Reloads saved conf
+```
+load
+```
+
+### Switches
+
+##### Main Congifuration
+```
+enable
+conf t
+hostname [switch_name]
+enable secret [password_name]
+show run #shows the commands setteled
+
+```
+
+##### Vlans
+
+Set access port (Pcs -> Switches)
+```
+enable
+conf t
+vlan 10
+name Profes
+exit
+int f0/1   
+switchport mode access
+switchport access vlan 10
+no shut
+end
+wr
+show vlan brief
+```
+
+Set trunk port (Switches -> Switches || Switches -> Routers)
+
+```
+en
+conf
+int f0/3   
+switchport mode trunk
+switchport trunk native vlan 99 #Blocks attacks
+switchport trunk allowed vlan 10,20  #For secure
+vtp mode transparent #Stay local(no delete disk)
+exit
+vlan 999 #This is the black hole and it is to make some vlans unusables
+name BLACKHOLE
+exit
+int range f0/6-23
+switchport mode access
+switchport access vlan 999
+shutdown
+end
+wr
+```
+
 
