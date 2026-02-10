@@ -79,35 +79,21 @@ Edit > Preferences > Dynamips > Iso Router > New > Local computer > Browse it > 
 
 ### PCs
 
-Check the pc information
-```
-show ip
-```
+Se up ip in pc 
+![[Pasted image 20260210002100.png]]
 
-Set ip 
-```
-ip 192.168.1.10 255.255.255.0 192.168.1.1
-```
+After select the net and right click to choose properties 
 
-Check the connectivity with devices
-```
-ping 192.168.1.20
-```
+![[Pasted image 20260210002158.png]]
+##### Putty Congifuration for Switches and Routers Management
 
-Save all the conf
-```
-save
-```
+Open device manaer and choose the console cable
+![[Pasted image 20260210000419.png|500]]
 
-Show the arp 
-```
-show arp
-```
+Open Putty and shoose seria, then rename the serial line 
+![[Pasted image 20260210000538.png]]
 
-Reloads saved conf
-```
-load
-```
+
 
 ### Switches
 
@@ -135,6 +121,9 @@ switchport mode access
 switchport access vlan 10
 no shut
 end
+conf
+int vlan 10 # Let's set the ip address of gateway ion  vlans to connect with others
+ip add 192.168.10.1 255.255.255.0
 wr
 show vlan brief
 ```
@@ -148,8 +137,8 @@ int f0/3
 switchport mode trunk
 switchport trunk native vlan 99 #Blocks attacks
 switchport trunk allowed vlan 10,20  #For secure
-vtp mode transparent #Stay local(no delete disk)
 exit
+vtp mode transparent #Stay local(no delete disk)
 vlan 999 #This is the black hole and it is to make some vlans unusables
 name BLACKHOLE
 exit
@@ -161,4 +150,15 @@ end
 wr
 ```
 
+
+Make possible the comunication between different vlans (This is jut for switches that support L3 routing)
+
+```
+en 
+conf
+int vlan 10
+ip add 192.168.10.1 255.255.255.0
+exit
+ip routing
+```
 
