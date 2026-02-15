@@ -53,8 +53,7 @@ ping -c 1 -R 10.129.143.158
 
 [Install Images routers](https://www.telectronika.com/descargas/cisco-imagenes-ios-para-gns3-dynamips-y-vm/)
 
-[Cisco images](https://community.cisco.com/t5/routing/images-for-gns3/td-p/3813389)
-
+[Cisco images]([https://community.cisco.com/t5/routing/images-for-gns3/td-p/3813389](https://ccnadesdecero.es/descargar-cisco-ios-gns3/))
 
 ==FIRST CONFIGURATION==
 
@@ -77,7 +76,7 @@ Edit > Preferences > Dynamips > Iso Router > New > Local computer > Browse it > 
 ==COMMANDS==
 
 
-### PCs
+## PCs
 
 Se up ip in pc 
 ![[Pasted image 20260210002100.png]]
@@ -95,7 +94,20 @@ Open Putty and shoose seria, then rename the serial line
 
 
 
-### Switches
+## Switches L2
+(VLANs, Port Security, STP, EtherChannel, VTP).
+
+1. **VLANs/Trunking** (segmentation) ✓
+    
+2. **Port Security** (MAC lockdown) ✓
+    
+3. **STP/RSTP** (loop prevention) ✓
+    
+4. **EtherChannel** (redundancy/bandwidth) ✓
+    
+5. **VTP** (VLAN sync) ✓
+    
+6. **PortFast/BPDU Guard** (STP optimization) ✓
 
 ##### Main Congifuration
 ```
@@ -108,6 +120,7 @@ show run #shows the commands setteled
 ```
 
 ##### Vlans
+(Virtual network that lives inside a physical switch)
 
 Set access port (Pcs -> Switches)
 ```
@@ -121,9 +134,6 @@ switchport mode access
 switchport access vlan 10
 no shut
 end
-conf
-int vlan 10 # Let's set the ip address of gateway ion  vlans to connect with others
-ip add 192.168.10.1 255.255.255.0
 wr
 show vlan brief
 ```
@@ -161,4 +171,128 @@ ip add 192.168.10.1 255.255.255.0
 exit
 ip routing
 ```
+
+
+##### Port Security
+(Isolates the port protected for unauthorized access)
+
+```
+conf t
+int fa0/1
+ switchport mode access
+ switchport access vlan 10
+ switchport port-security
+ switchport port-security maximum 1
+ switchport port-security violation shutdown
+ switchport port-security mac-address sticky ||
+	  switchport port-security mac-address 00d0.5809.2c42
+end
+show port-security interface fa0/1
+show interface fa0/1 status
+```
+
+In case we want to delete some interfaces
+```
+conf t
+int fa0/1
+ no switchport port-security
+ no switchport port-security mac-address 00d0.5809.2c42 ||
+	 no switchport port-security mac-address sticky
+ shut
+ no shut
+end
+```
+
+"We can confirm if that works connecting the interface to another computer and then connecting it back or the original one"
+
+To activate the interface again is just with no shutdown
+```
+en
+conf
+int f0/1
+suntdown
+no suntdown
+end 
+```
+
+##### STP (Spanning Tree)
+(Protocol that ensures there is only one active path between any two network nodes)
+
+The main problen of the STP is the time so this will be solved with "PortFast + BPDY technology"
+
+![[Pasted image 20260214212909.png|400]]
+
+Configure the core switch wit this commands
+```
+conf t
+spanning-tree mode rapid-pvst
+spanning-tree vlan 10 root primary   ! SW1 becomes root
+end
+show spanning-tree vlan 10
+```
+
+
+##### EtherChannel
+(Allow the connection of 2 cables between 2 sitches)
+![[Pasted image 20260214184002.png]]
+This commands must to be set in both switches
+```
+en
+conf
+int range f0/1-2
+channel-group 1 mode active
+exit
+int port-channel 1
+switchport mode trunk
+end 
+show etherchannel summary
+```
+
+
+##### VPT PROTOCOL
+(Allows make changes that will be reflexted in all the topology)
+
+|Mode|Creates/Deletes VLANs?|Uses VTP Updates?|Forwards VTP Updates?|VLAN Storage|Use Case|
+|---|---|---|---|---|---|
+|**Server**|✅ Yes|✅ Applies|✅ Yes|vlan.dat (flash)|**Master** switch – controls all VLANs in domain.[study-ccna+1](https://study-ccna.com/vtp-modes/)|
+|**Client**|❌ No|✅ Applies|✅ Yes|vlan.dat (flash, from server)|Follows Server blindly – no local changes.[study-ccna+1](https://study-ccna.com/vtp-modes/)|
+|**Transparent**|✅ Yes (local only)|❌ Ignores|✅ Yes (passes through)|running-config|**Safe relay** – your VLANs stay yours, forwards to others.[community.cisco+1](https://community.cisco.com/t5/switching/the-difference-between-vtp-server-and-transparent-mode-on/td-p/2490956)|
+|**Off** (VTPv3 only)|✅ Yes (local)|❌ Ignores|❌ No|running-config|Total isolation – no VTP traffic at all.[study-ccna](https://study-ccna.com/vtp-modes/)​|
+
+
+With this configuration the vlan 30 will be settlet automatically in the other switch
+```
+conf t
+vtp mode server
+vtp domain MYLAB
+vtp version 2
+vlan 30
+ name LAB30
+switchport mode trunk
+end
+```
+
+```
+conf t
+vtp mode client
+vtp domain MYLAB
+vtp version 2
+end
+```
+
+
+##### PortFast + BPDY technology
+(Skip the waiting states of Spanning Tree)
+
+```
+int fa0/1
+ spanning-tree portfast
+ spanning-tree bpduguard enable
+end
+```
+
+
+##### Inter‑VLAN Routing
+
+## Routers
 
