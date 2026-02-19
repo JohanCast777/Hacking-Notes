@@ -95,7 +95,6 @@ Open Putty and shoose seria, then rename the serial line
 
 
 ## Switches L2
-(VLANs, Port Security, STP, EtherChannel, VTP).
 
 1. **VLANs/Trunking** (segmentation) ✓
     
@@ -292,7 +291,80 @@ end
 ```
 
 
-##### Inter‑VLAN Routing
 
 ## Routers
+
+The main configuration is the same than the switch
+
+Configuration ip
+```
+int g0/0 
+ip address 192.168.1.1 255.255.255.0 
+no shut
+```
+
+Configure ips with vlans
+```
+int g0/0
+no shutdown
+exit
+int g0/0.10
+encapsulation dot1Q 10
+ip address 192.168.10.1 255.255.255.0
+no shutdown 
+show run | inc encapsulation
+```
+
+
+##### DHCP
+
+```
+ip dhcp pool VLAN10
+ network 192.168.10.0 255.255.255.0
+ default‑router 192.168.10.1
+ dns‑server 8.8.8.8 1.1.1.1
+exit
+ip dhcp excluded‑address 192.168.10.1
+int g0/0
+ ip address 192.168.10.1 255.255.255.0
+ no shut
+end
+wr
+show ip dhcp binding
+show ip dhcp pool
+
+```
+
+##### Static Routing
+
+
+![[Pasted image 20260218134850.png|600]]
+
+First configure the network 10.0.0.0/30
+
+Then configure the ip of every pc
+
+Configure trunk in the switch
+
+Create the vlans
+
+Now use this commands to admit that we can sent ping to fartest router 
+
+R1
+```
+conf t 
+ip route 192.168.1.0 255.255.255.0 10.0.0.2 
+ip route 192.168.0.0 255.255.255.0 10.0.0.2 
+end
+wr
+```
+
+R2
+```
+conf t 
+ip route 192.168.1.0 255.255.255.0 10.0.0.1
+ip route 192.168.0.0 255.255.255.0 10.0.0.1 
+end
+wr
+```
 

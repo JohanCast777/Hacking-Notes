@@ -180,12 +180,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "9403d5ecb8556157",
+  "active": "0c3d7a6b308946fc",
   "lastOpenFiles": [
+    "Untitled.md",
+    "🌐NETWORKING/🌐📅BASICS/🛜💻 NETWORKING CONFIGURATIONS.md",
+    "🗎 RESOURCES/Pasted image 20260218134850.png",
     "🗎 RESOURCES/Pasted image 20260214212909.png",
     "Pasted image 20260214212909.png",
     "🗎 RESOURCES/Pasted image 20260214184002.png",
-    "🌐NETWORKING/🌐📅BASICS/🛜💻 NETWORKING CONFIGURATIONS.md",
     "🌐NETWORKING/🌐📅BASICS/PKT PROJECTS/PORT SECURITY.pkt",
     "🌐NETWORKING/🌐📅BASICS/VLSM.md",
     "🌐NETWORKING/🌐📅BASICS/🔢🏷️🔌VLANS.md",
@@ -205,8 +207,6 @@
     "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
     "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
     "🕵🏻‍♀️ANONYMITY/🌉 BRIDGES.md",
-    "🗎 RESOURCES/Pasted image 20260118140556.png",
-    "🗎 RESOURCES/Pasted image 20260117224045.png",
     "🗎 RESOURCES/Network_Enumeration_With_Nmap_Module_Cheat_Sheet.pdf",
     "🗎 RESOURCES",
     "👨🏻‍💻CYBERSECURITY BASICS/💥⚔️MAIN ATTACKS.md",
@@ -226,7 +226,6 @@
     "🐧LINUX",
     "🐍PYTHON HACKING/test.md",
     "🐍PYTHON HACKING",
-    "🎣SOCIAL ENGINEERING/test.md",
-    "🌐NETWORKING/👁️NMAP/🚩BANNER.md"
+    "🎣SOCIAL ENGINEERING/test.md"
   ]
 }
