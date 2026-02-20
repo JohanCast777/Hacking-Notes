@@ -6,14 +6,14 @@ ifconfig -a
 
 # NETSTATUS
 
-|Option|Meaning|What it shows|
-|---|---|---|
-|**-t**|TCP|Show TCP connections (reliable, connection-based)|
-|**-u**|UDP|Show UDP connections (unreliable, connectionless)|
-|**-l**|Listening|Only show ports that are **listening** for incoming connections|
-|**-n**|Numeric|Show numeric IP addresses and port numbers instead of names (e.g., `127.0.0.1:80` instead of `localhost:http`)|
-|**-p**|Program|Show the **PID and program name** that owns each socket (e.g., `1234/apache2`)|
-|**-4**|IPv4|Show only **IPv4** connections (not IPv6)|
+| Option | Meaning   | What it shows                                                                                                  |
+| ------ | --------- | -------------------------------------------------------------------------------------------------------------- |
+| **-t** | TCP       | Show TCP connections (reliable, connection-based)                                                              |
+| **-u** | UDP       | Show UDP connections (unreliable, connectionless)                                                              |
+| **-l** | Listening | Only show ports that are **listening** for incoming connections                                                |
+| **-n** | Numeric   | Show numeric IP addresses and port numbers instead of names (e.g., `127.0.0.1:80` instead of `localhost:http`) |
+| **-p** | Program   | Show the **PID and program name** that owns each socket (e.g., `1234/apache2`)                                 |
+| **-4** | IPv4      | Show only **IPv4** connections (not IPv6)                                                                      |
 
 ==Main example==
 ```shell
@@ -157,6 +157,7 @@ switchport access vlan 999
 shutdown
 end
 wr
+sh interface trunk
 ```
 
 
@@ -367,4 +368,51 @@ ip route 192.168.0.0 255.255.255.0 10.0.0.1
 end
 wr
 ```
+
+##### Default static route
+
+Keeping the same example picture, we can instead use this commands and it will work as well
+```
+conf t
+ip route 0.0.0.0 0.0.0.0 10.0.0.1
+end
+wr
+```
+
+Note= We can use both together, and it is also recommendable
+
+##### NAT
+(Translates private ips "12.168..." to public ips "209.165...")
+
+|Type|Function|How it works|Real use|
+|---|---|---|---|
+|**Static NAT**|**1 private = 1 fixed public**|Fixed mapping (192.168.1.10 ↔ 209.165.200.10)|**Servers** (web/mail – Internet initiates connection)|
+|**Dynamic NAT**|**Private → public pool** (1:1 rotating)|Private gets temp public from pool (returns when done)|Medium offices (limited public IPs available)|
+|**PAT (NAT Overload)**|**Many private → 1 public + ports**|192.168.1.10:80 → 209.165.200.1:50001|**Home/enterprise** (all PCs share 1 public IP)|
+![[Pasted image 20260219190903.png]]
+###### Static NAT
+
+
+In the selected router we will make the configuration
+```
+conf t
+ip nat inside source static 192.168.0.2 200.200.200.1
+int g0/0
+ip nat inside
+exit
+int s 0/1/0
+ip nat outside
+exit
+sh ip nat translation
+```
+
+###### Dynamic NAT
+
+conf t
+access-list 1 permit 192.168.0.0 0.0.0.255
+ip nat pool DYNAMIC 200.200.200.1 200.200.200.3 netmask 255.255.255.252
+ip nat inside source list 1 pool DYNAMIC   ← NO "overload"
+
+
+
 
