@@ -408,11 +408,93 @@ sh ip nat translation
 
 ###### Dynamic NAT
 
+```
 conf t
 access-list 1 permit 192.168.0.0 0.0.0.255
 ip nat pool DYNAMIC 200.200.200.1 200.200.200.3 netmask 255.255.255.252
 ip nat inside source list 1 pool DYNAMIC   ← NO "overload"
+```
+
+###### Overload Nat or PAT
+
+```
+conf t
+access-list 1 permit 192.168.0.0 0.0.0.255
+ip nat pool DYNAMIC 200.200.200.1 200.200.200.1 netmask 255.255.255.252
+ip nat inside source list 1 pool DYNAMIC overload    ← KEY WORD!
+end
+```
 
 
+##### ACL
+(Traffic Filtering)
 
+![[Pasted image 20260221183417.png|500]]
+
+Thiis is the range 
+![[Pasted image 20260221221637.png]]
+###### Standart 
+(BLocks only ip addresses)
+![[Pasted image 20260221195421.png|400]]
+
+
+![[Pasted image 20260221194557.png|700]]
+
+```
+conf t
+access-list 10 deny 192.168.0.10      # Block PC .10
+access-list 10 permit 192.168.0.0 0.0.0.255  # Allow all the network
+int g0/0  # LAN interface
+ ip access-group 10 in
+show access-lists
+no accesslist 
+```
+
+
+###### Extended 
+(Blocks ips, protocols and ports)
+
+![[Pasted image 20260221203705.png]]
+
+```
+access-list 101 deny tcp 192.168.0.0 0.0.0.255 any eq 80 
+access-list 101 deny tcp 192.168.0.0 0.0.0.255 any eq 443 # HTTPS too 
+access-list 101 permit ip any any # Allow everything else
+interface g0/0
+ip access-group 101 out # OUTBOUND = LAN→WAN
+end
+```
+
+In order to test it use this
+
+```
+ping 200.200.200.0
+telnet 200.200.200.0 80
+```
+
+
+Nother examples
+(This example allos the communication of the 10.0.0.1:7777 to 54.4.4.4:80 )
+```
+access-list 101 permit tcp host 10.0.0.1 eq 7777 host 54.4.4.4 eq 80
+```
+
+```
+access-list 101 permit ip host 10.0.0.11 host 54.4.4.4.7 #allow just the specific ips
+```
+
+```
+access-list 101 permit ip 10.0.0.1 0.0.0.255 host 45.5.5.8
+```
+
+##### NAMED ACLS
+(Same than access list, but the syntaxis is even easier)
+
+```
+ip access-list extended NAME
+deny tcp 192.168.0.0 0.0.0.255 any eq 80 
+deny tcp 192.168.0.0 0.0.0.255 any eq 443
+remark Block HTTP/HTTPS from LAN   #Remember this are only commands
+permit ip any any
+```
 
