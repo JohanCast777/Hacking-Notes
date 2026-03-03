@@ -14,6 +14,7 @@ ifconfig -a
 | **-n** | Numeric   | Show numeric IP addresses and port numbers instead of names (e.g., `127.0.0.1:80` instead of `localhost:http`) |
 | **-p** | Program   | Show the **PID and program name** that owns each socket (e.g., `1234/apache2`)                                 |
 | **-4** | IPv4      | Show only **IPv4** connections (not IPv6)                                                                      |
+|        |           |                                                                                                                |
 
 ==Main example==
 ```shell
@@ -61,10 +62,10 @@ The router must be downloaded via iso file "images"
 
 Types of images=
 
-| Type                            | Features                                                         | Use Case                        | Example Images                                                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| **Beginner/Basic** (IP Base/K9) | Basic routing, VLANs, OSPF, EIGRP. Low RAM.                      | CCNA intro.                     | c3725-ipbasek9-mz.124-15.T14.bin [gns3](https://docs.gns3.com/docs/emulators/cisco-ios-images-for-dynamips/)​                     |
-| **Advanced** (adventerprisek9)  | + MPLS, BGP, IPSec VPN, QoS, full security (NAT, ACLs advanced). | CCNP, pentest labs, real‑world. | **c3725-adventerprisek9-mz.124-25d.bin** (your pick) [gns3](https://docs.gns3.com/docs/emulators/cisco-ios-images-for-dynamips/)​ |
+| Type                            | Features                                                         | Use Case                        | Example Images                                                                                                                                                                          |
+| ------------------------------- | ---------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Beginner/Basic** (IP Base/K9) | Basic routing, VLANs, OSPF, EIGRP. Low RAM.                      | CCNA intro.                     | c3725-ipbasek9-mz.124-15.T14.bin [gns3](https://docs.gns3.com/docs/emulators/cisco-ios-images-for-dynamips/)​                                                                           |
+| **Advanced** (adventerprisek9)  | + MPLS, BGP, IPSec VPN, QoS, full security (NAT, ACLs advanced). | CCNP, pentest labs, real‑world. | **c3725-adventerprisek9-mz.124-25d.bin** (your pick) [gns3]([https://docs.gns3.com/docs/emulators/cisco-ios-images-for-dynamips/](https://ccnadesdecero.es/descargar-cisco-ios-gns3/))​ |
 
 Now follow this steps to insert the image and use the router(image)
 
@@ -92,7 +93,14 @@ Open device manaer and choose the console cable
 Open Putty and shoose seria, then rename the serial line 
 ![[Pasted image 20260210000538.png]]
 
-
+In Putty the ip configuration is like this
+```
+ip [dirección_ip] [máscara] [gateway]
+show ip
+save
+sh ip int br # For Routers
+sh ip route  # For Routers
+```
 
 ## Switches L2
 
@@ -497,4 +505,158 @@ deny tcp 192.168.0.0 0.0.0.255 any eq 443
 remark Block HTTP/HTTPS from LAN   #Remember this are only commands
 permit ip any any
 ```
+
+##### RIP
+
+|**Característica**|**RIP (v1 y v2)**|**OSPF (v2 y v3)**|
+|---|---|---|
+|**Tipo de Protocolo**|**Distance Vector** (Vector de Distancia)|**Link-State** (Estado de Enlace)|
+|**Algoritmo**|Bellman-Ford|Dijkstra (SPF - Shortest Path First)|
+|**Métrica**|**Conteo de saltos (Hops)**|**Costo** (basado en el ancho de banda)|
+|**Límite de Tamaño**|Máximo **15 saltos** (16 es infinito)|Sin límite teórico (usa Áreas)|
+|**Velocidad de Convergencia**|**Lenta** (depende de timers fijos)|**Muy Rápida** (reacciona a cambios)|
+|**Actualizaciones**|Periódicas (cada 30 seg)|Basadas en eventos (LSA)|
+|**Visión de la Red**|"Solo conoce a sus vecinos"|"Tiene un mapa completo de la red"|
+|**Uso de CPU/RAM**|Muy bajo|Moderado a Alto|
+|**Jerarquía**|Plana (todos los routers son iguales)|Jerárquica (Área 0, Áreas Secundarias)|
+|**Distancia Administrativa**|**120**|**110**|
+|**Estándar**|Abierto (RFC 1058/2453)|Abierto (RFC 2328)|
+
+![[Pasted image 20260222170039.png|500]]
+###### V1
+```
+conf
+router rip 
+network 192.168.1.0
+network 10.0.0.0
+show ip route rip   # Show
+no router rip       # Delete
+```
+
+###### V2
+```
+conf t
+router rip
+ version 2              # ← RIPv2 (subnets + authentication)
+ no auto-summary        # ← No classful auto-summarization
+ passive-interface default # ← ALL interfaces passive no passive-interface   GigabitEthernet0/0 # ← EXCEPT LAN (send updates)
+ network 192.168.1.0
+ network 10.0.0.0
+end
+```
+
+
+
+##### OSPF (DYNAMIC ROUTING)
+
+Router1
+```
+conf t
+router ospf 1
+ router-id 1.1.1.1           # Unique ID per router "no mandatory"
+ network 192.168.1.0 0.0.0.255 area 0  # LAN1
+ network 200.1.1.0 0.0.0.3 area 0       # WAN link
+end
+show ip ospf neighbor
+sh ip route ospf
+sh ip ospf database
+no router ospf 1
+
+```
+
+Router2
+```
+router ospf 1
+ router-id 2.2.2.2
+ network 192.168.2.0 0.0.0.255 area 0
+ network 200.1.1.0 0.0.0.3 area 0
+```
+
+#### HSRP, VRRP, GLBP (FHRP)
+(**All three provide redundant default gateways.** They solve the "single router failure = total outage" problem.)
+##### HSRP (Hot Standby Router Protocol)
+
+Use this Topology wit OSPF
+
+![[Pasted image 20260226102859.png]]
+
+Configure the virtual gateway in the pc (192.168.1.1)
+
+Then follow the next commads for the router with the gateway
+
+
+R0 (Active Router)
+```
+conf t
+int g0/0
+standby 1 ip 192.168.1.1
+standby 1 priority 110
+standby 1 preempt
+end
+```
+
+R1 (Active Router)
+```
+conf t
+int g0/0
+standby 1 ip 192.168.1.1
+standby 1 priority 100
+standby 1 preempt
+end
+show standby brief
+show ip interface brief | include 192.168.1
+```
+
+We can check if it works, sending pings from the pc to the last Router, additionally disconnecting the active and standby router.
+
+
+##### VRRP (Virtual Router Redundancy Protocol)
+
+Here is identical process, just we got to follow all the steps here (Remember Virtual or simulated GATEWAY)
+
+Update first the gateway of the pc
+
+Then follow these steps
+
+R0 (Active Router)
+```
+conf t
+int g0/0
+vrrp 1 ip 192.168.1.1
+vrrp 1 priority 110
+vrrp 1 preempt
+end
+```
+
+R1 (Active Router)
+```
+conf t
+int g0/0
+vrrp 1 ip 192.168.1.1
+vrrp 1 priority 100
+vrrp 1 preempt
+end
+no vrrp 1
+show vrrp brief
+show ip interface brief | include 192.168.1
+```
+
+Shutdown the interface where the cable was disconnected  !!IMPORTANT
+##### GLBP
+Again change tje pc gateway and shutdown the interface in case of test
+```
+conf t
+int g0/0
+glbp 1 ip 192.168.1.1
+glbp 1 priority 100
+glbp 1 preempt
+end
+
+no glbp 1
+
+show glbp brief
+show ip interface brief | include 192.168.1
+```
+
+
 

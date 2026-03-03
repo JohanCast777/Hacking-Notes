@@ -11,10 +11,34 @@
             "id": "87b0e77b994eac0d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🖧 SWITCHES L2.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "🖧 SWITCHES L2"
+            }
+          }
+        ]
+      },
+      {
+        "id": "82e9a9e634c3308d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "918976f90f91aa45",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🌐NETWORKING/🌐📅BASICS/🛜💻 NETWORKING CONFIGURATIONS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "🛜💻 NETWORKING CONFIGURATIONS"
             }
           }
         ]
@@ -40,7 +64,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -49,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"🌐NETWORKING/🌐📅BASICS/PKT PROJECTS/\" ",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +81,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "Buscar"
             }
           },
           {
@@ -167,61 +191,62 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
     }
   },
-  "active": "9403d5ecb8556157",
+  "active": "87b0e77b994eac0d",
   "lastOpenFiles": [
-    "🗎 RESOURCES/Pasted image 20260221195421.png",
     "🌐NETWORKING/🌐📅BASICS/🛜💻 NETWORKING CONFIGURATIONS.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🖧 SWITCHES L2.md",
+    "🌐NETWORKING/🌐📅BASICS/🔢🏷️🔌VLANS.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/💻 The Management PC (The Modern Brain).md",
+    "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🔥🧱🛡️Next-Gen Firewall (NGFW) & IPS.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/⤵Wireless- WLC & Access Points.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🔀SWITCHES L3.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🖥️PCs.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION/🛜ROUTERS.md",
+    "🌐NETWORKING/🌐📅BASICS/🔢VLSM.md",
+    "🌐NETWORKING/👁️NMAP/🔍💻HOST SCANNING.md",
+    "🌐NETWORKING/🖥️모➰DEVICES CONFIGURATION",
+    "🗎 RESOURCES/Pasted image 20260302225208.png",
+    "🗎 RESOURCES/Pasted image 20260226102859.png",
+    "🗎 RESOURCES/Pasted image 20260226094454.png",
+    "🌐NETWORKING/🌐, 💻, 🖥️PORTS AND PROTOCOLES/🔌 PORTS AND PROTOCOLS.md",
+    "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
+    "🕵🏻‍♀️ANONYMITY/🌉 BRIDGES.md",
+    "🕵🏻‍♀️ANONYMITY/ᝰ✍🏻VERIFYCATION SIGNATURE STEPS.md",
+    "🕵🏻‍♀️ANONYMITY/🛡️ VPNs.md",
+    "🕵🏻‍♀️ANONYMITY/🪙  ANONYMUOS WALLET.md",
+    "🕵🏻‍♀️ANONYMITY/🧅 TOR.md",
+    "🕵🏻‍♀️ANONYMITY/🤖 AI.md",
+    "🕵🏻‍♀️ANONYMITY/🕸️ CLASSES.md",
+    "🕵🏻‍♀️ANONYMITY/🔍 SEARCH ENGINES.md",
+    "🕵🏻‍♀️ANONYMITY/📧 ANONYMOUS CONTACT METHODS.md",
+    "🗎 RESOURCES/Pasted image 20260222170039.png",
+    "🗎 RESOURCES/Pasted image 20260222160940.png",
+    "🗎 RESOURCES/Pasted image 20260221195421.png",
     "🗎 RESOURCES/Pasted image 20260221221637.png",
     "🗎 RESOURCES/Pasted image 20260221203705.png",
     "🗎 RESOURCES/Pasted image 20260221194557.png",
     "🗎 RESOURCES/Pasted image 20260221183417.png",
-    "🗎 RESOURCES/Pasted image 20260219190903.png",
-    "Pasted image 20260219190903.png",
-    "Pasted image 20260219190816.png",
-    "oardefault.avif",
     "Untitled.md",
-    "🗎 RESOURCES/Pasted image 20260218134850.png",
     "🌐NETWORKING/🌐📅BASICS/PKT PROJECTS/PORT SECURITY.pkt",
-    "🌐NETWORKING/🌐📅BASICS/VLSM.md",
-    "🌐NETWORKING/🌐📅BASICS/🔢🏷️🔌VLANS.md",
     "🌐NETWORKING/🌐📅BASICS/PKT PROJECTS/VLANS.pkt",
     "🌐NETWORKING/🌐📅BASICS/PKT PROJECTS",
     "🌐NETWORKING/🌐📅BASICS/Nueva carpeta",
     "🌐NETWORKING/🌐📅BASICS/VLANS.pkt",
-    "🌐NETWORKING/🌐📅BASICS/🔗NETWORKING CONCEPTS.md",
     "🗃️REPOSITORIES AND BACKUPS/📦🗂️GIT COMMANDS.md",
-    "🕵🏻‍♀️ANONYMITY/💬 MESSAGING.md",
     "🐧LINUX/⚙️🗂️💾FILE SYSTEM MANAGEMENT.md",
-    "🐧LINUX/📦📦🚛CONTAINERIZATION.md",
-    "🕵🏻‍♀️ANONYMITY/🌉 BRIDGES.md",
     "🗎 RESOURCES/Network_Enumeration_With_Nmap_Module_Cheat_Sheet.pdf",
     "🗎 RESOURCES",
-    "👨🏻‍💻CYBERSECURITY BASICS/💥⚔️MAIN ATTACKS.md",
-    "👨🏻‍💻CYBERSECURITY BASICS/⭐MAIN FACTORS.md",
     "👨🏻‍💻CYBERSECURITY BASICS",
-    "🐧LINUX/🔐🛡️PERMISSIONS.md",
-    "🐧LINUX/🛠️⚙️SERVICES.md",
-    "🐧LINUX/🔄📥BACKUP AND RESTORE.md",
-    "🐧LINUX/🔍🕵️FIND.md",
-    "🐧LINUX/📊⚙️ FILTER AND OPEN CONTENTS.md",
-    "🐧LINUX/👤 MANAGE USERS.md",
-    "🐧LINUX/🐧🪟MAIN.md",
-    "🐧LINUX/⬇️📦 APPLICATIONS.md",
-    "🐧LINUX/⏻✅  WAKE ON LAN.md",
-    "🐧LINUX/⬇️DOWNLOAD INSTALLATION WAYS.md",
-    "🐧LINUX/⏳⏱️TASK SCHEDULING.md",
-    "🐧LINUX",
-    "🐍PYTHON HACKING/test.md",
-    "🐍PYTHON HACKING",
-    "🎣SOCIAL ENGINEERING/test.md"
+    "🐧LINUX"
   ]
 }

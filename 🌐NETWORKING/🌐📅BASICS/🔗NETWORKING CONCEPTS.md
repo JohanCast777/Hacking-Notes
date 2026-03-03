@@ -55,7 +55,11 @@ linux= netstat -antp
 ==BROWSING INTERNET EXAMPLE==
 ![[Pasted image 20251102213543.png|500]]
 
+# BANDWITH
 
+Amoung of information internet can handle at given time 
+
+![[Pasted image 20260302225208.png]]
 # DHCP
 
 Automatically assigns IP addresses to devices on a network so they can communicate.
