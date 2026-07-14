@@ -64,12 +64,17 @@ chmod +x install-docker.sh
 ```
 
 ```
-sudo ./install-docker.sh
+sudo ./install-docker.sh -y
 ```
 
 Install lazy docker
 ```
 curl https://raw.githubusercontent.com/jesseduffield/lazydocker/master/scripts/install_update_linux.sh | bash
+```
+
+OPen lazydocker
+```
+~/.local/bin/lazydocker
 ```
 
 Fix the patch 

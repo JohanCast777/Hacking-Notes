@@ -70,7 +70,12 @@ PASV^M
 
 
 ==COMMANDS==
-**RETR**
+
+put
+rename
+get
+quit
+delete
 
 ==CONNECT WITH NMAP==
 

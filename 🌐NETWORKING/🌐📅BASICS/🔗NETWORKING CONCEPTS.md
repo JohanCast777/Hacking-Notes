@@ -1,5 +1,7 @@
 
-==OSI MODEL AND TPC MODEL==
+
+OSI MODEL
+
 ![[Pasted image 20251027203458.png|500]]
 
 ![[Pasted image 20251112191806.png]]
@@ -16,22 +18,25 @@
 | `2.Data Link`    | The central task of layer 2 is to enable reliable and error-free transmissions on the respective medium. For this purpose, the bitstreams from layer 1 are divided into blocks or frames.                                   |
 | `1.Physical`     | The transmission techniques used are, for example, electrical signals, optical signals, or electromagnetic waves. Through layer 1, the transmission takes place on wired or wireless transmission lines.                    |
 
-==TRANSMISION==
+
+
+TRANSMISSION TYPES
 
 
 ![[Pasted image 20251028204143.png|500]]
 
+TRANSMISSION MODES
 ![[Pasted image 20251028204256.png|500]]
+
+TRANSMISSION MEDIA
 
 ![[Pasted image 20251028204333.png|500]]
 
-==MAC AND IP==
+DIFFERENCE MAC AND IP
 
 ![[Pasted image 20251102190200.png|500]]
-Linux command=ifconfig - cat /sys/class/net/*/address - ip link show
-Windows command= get mac   -  ipconfig
 
-==PORTS==
+PORTS
 
 A port in networking is like a numbered doorway on a computer or server that helps direct different types of network traffic to the right program or service. Each port has a unique number, typically between 0 and 65535, which identifies it and corresponds to a specific function or protocol, such as port 80 for HTTP (web traffic) or port 22 for SSH (secure remote login).
 
@@ -46,6 +51,8 @@ A port in networking is like a numbered doorway on a computer or server that hel
     
 - The **third type** (Dynamic or Private Ports) are temporary ports used by your computer or apps like Filmora when they need to communicate over the network. You can assign or let the system pick these ports for your applications.
 
+==ELECTROMACNETING SPECTRUM==
+![[Pasted image 20260304171704.png]]
 
 Work in the layer 4
 Check active ports
@@ -60,10 +67,6 @@ linux= netstat -antp
 Amoung of information internet can handle at given time 
 
 ![[Pasted image 20260302225208.png]]
-# DHCP
-
-Automatically assigns IP addresses to devices on a network so they can communicate.
-![[Pasted image 20251102215024.png | 500 ]]
 
 # NAT
 
@@ -534,3 +537,100 @@ Used to exchange [cryptographic keys](https://www.cloudflare.com/learning/ssl/wh
 
 
 
+Protocols composition
+
+![[Pasted image 20260314234647.png]]
+
+Types of cables
+
+![[Pasted image 20260316120616.png]]
+
+UTP vs STP
+
+![[Pasted image 20260316113436.png]]
+
+Twisted pair cables
+
+Color codes
+![[Pasted image 20260316113054.png]]
+
+
+![[Pasted image 20260316120843.png]]
+
+![[Pasted image 20260316113158.png]]
+
+PRIVATE AND PUBLIC IP ADDRESSES
+![[Pasted image 20260408223639.png]]
+
+![[Pasted image 20260330195943.png]]
+
+
+NETWORK TRANSMITION MODES (Unicast, Broadcast, Multicast)
+
+![[Pasted image 20260408214239.png]]
+
+
+ARP
+
+![[Pasted image 20260408220540.png]]
+
+
+IPv6 
+![[Pasted image 20260409143126.png]]
+
+IPv6 formatting rules
+![[Pasted image 20260409162332.png]]
+IPv6 Transition methods
+
+![[Pasted image 20260409151430.png]]
+
+
+DHCP
+
+![[Pasted image 20251102215024.png | 500 ]]
+
+
+![[Pasted image 20260410211652.png]]
+
+
+
+ND and ARP protocol
+
+![[Pasted image 20260520203413.png]]
+
+
+NSLOOKUP AND NETSTAT 
+
+![[Pasted image 20260611202503.png]]
+
+URI, URL and URN
+![[Pasted image 20260611202622.png]]
+
+FTP
+![[Pasted image 20260620111315.png]]
+
+
+SMTP and POP3 (IMAP4) 
+
+![[Pasted image 20260620210324.png]]
+
+
+
+NETSTAT 
+
+| Command    | Shows                               |
+| ---------- | ----------------------------------- |
+| netstat    | Active TCP connections              |
+| netstat -a | All connections and listening ports |
+| netstat -r | Routing table                       |
+| netstat -n | Addresses shown numerically         |
+
+IEEE standard
+
+| **IEEE Standard**      | **RF Band(s)**  | **Max Data Rate** |
+| ---------------------- | --------------- | ----------------- |
+| **802.11a**            | 5 GHz           | 54 Mbps           |
+| **802.11b**            | **2.4 GHz**     | 11 Mbps           |
+| **802.11g**            | **2.4 GHz**     | 54 Mbps           |
+| **802.11n (Wi-Fi 4)**  | 2.4 GHz & 5 GHz | 600 Mbps          |
+| **802.11ac (Wi-Fi 5)** | 5 GHz           | 6.9 Gbps          |

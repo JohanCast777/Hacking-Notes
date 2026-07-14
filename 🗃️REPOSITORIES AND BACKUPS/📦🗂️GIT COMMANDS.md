@@ -10,7 +10,7 @@ git config --global user.email "castanojohan01@gmail.com"
 
 ## Sync folder with repository
 ```
-git init
+	git init
 ```
 ```
 git remote add origin https://github.com/TuUsuario/TuRepositorio.git
